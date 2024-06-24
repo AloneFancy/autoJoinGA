@@ -18,8 +18,6 @@ Login to your giveaway sites. Use Inspector->Network to get your cookies. Create
 
 ![.env](./Capture.PNG)
 
-Run with admin privilege
-
 `
     make
 `
@@ -30,4 +28,5 @@ or
 
 ## Notes
 
-`timezone` in **Makefile** is to sync your system time settings for Windows
+`timezone` in **Makefile** is to sync your system time settings for Windows, run with admin privilege for this command.
+
