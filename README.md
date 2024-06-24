@@ -8,11 +8,15 @@ Makefile
 
 Python 3.8 or later versions
 
+Run command to install required Python libraries
+
+`pip install -r requirements.txt`
+
 ## Usage
 
 Login to your giveaway sites. Use Inspector->Network to get your cookies. Create a **.env** file in the same folder, fill in as the image below, Twitter token is to join with your twitter url.
 
-![](./Capture.PNG)
+![.env](./Capture.PNG)
 
 Run with admin privilege
 
@@ -21,3 +25,9 @@ Run with admin privilege
 `
 
 or
+
+`make + [giveaways command]` in **Makefile**
+
+## Notes
+
+`timezone` in **Makefile** is to sync your system time settings for Windows
