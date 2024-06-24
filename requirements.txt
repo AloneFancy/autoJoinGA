@@ -1,0 +1,7 @@
+chompjs==1.2.4
+python-dotenv==1.0.1
+pywin32==306
+Requests==2.32.3
+requests_html==0.10.0
+sympy==1.12
+torch==2.0.0
