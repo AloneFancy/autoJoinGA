@@ -1,8 +1,8 @@
-all: timezone mann skinsmonkey
+all: mann skinsmonkey
 
 timezone:
-	python giveaways/syncTZ.py
+	python syncTZ.py
 mann:	
-	python giveaways/mann.py
+	python mann.py
 skinsmonkey:
-	python giveaways/skinsmonkey.py
+	python skinsmonkey.py
