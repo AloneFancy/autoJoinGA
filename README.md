@@ -16,7 +16,7 @@ Run command to install required Python libraries
 
 Login to your giveaway sites. Use Inspector->Network to get your cookies. Create a **.env** file in the same folder, fill in as the image below, Twitter token is to join with your twitter url.
 
-![.env](./Capture.PNG)
+![.env](img/Capture.PNG)
 
 `
     make
@@ -29,4 +29,3 @@ or
 ## Notes
 
 `timezone` in **Makefile** is to sync your system time settings for Windows, run with admin privilege for this command.
-

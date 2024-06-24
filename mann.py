@@ -3,7 +3,6 @@ from requests_html import HTMLSession
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
 
 
