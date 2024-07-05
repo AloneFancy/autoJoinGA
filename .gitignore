@@ -1,2 +1,5 @@
 .env
 config/
+logs/
+__pycache__/
+test.py

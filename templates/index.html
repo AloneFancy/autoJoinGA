@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Flask Form Submission without Page Reload</title>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('form').submit(function(event) {
+            event.preventDefault();
+            $.ajax({
+               type: 'POST',
+               url: '/',
+               data: $('form').serialize(),
+               success: function() {
+                  $('#skins-cookie').val('');
+                  $('#XRecaptchaToken').val('');
+                  $('#MannCookie').val('');
+                  alert('Form submitted!');
+               }
+            });
+         });
+      });
+   </script>
+</head>
+<body>
+<form method="POST">
+  <p>
+    <label for="first">Cookie</label>
+    <input id="first" name="skins-cookie" type="text" />
+  </p>
+  <p>
+    <label for="last">X-Recaptcha-Token</label>
+    <input id="last" name="XRecaptchaToken" type="text" />
+  </p>
+  <p>
+    <label for="last">MannCookie</label>
+    <input id="last" name="MannCookie" type="text" />
+  </p>
+
+  <input type="submit" value="Update values" />
+</form>
+</body>
+</html>
